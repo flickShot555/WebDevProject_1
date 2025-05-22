@@ -1,47 +1,92 @@
 *{
-    padding: 0;
-    margin:0;
+    padding:0px;
+    margin:0px;
 }
 
-nav{
+
+nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    /**
-        background-image: linear-gradient(to right, black , rgb(246, 252, 223));
-    */
-    background-color: #fbf4f6;;
+    align-items: center; /* Vertically centers all items in the navbar */
+    justify-content: space-between; /* Distributes space between logo, name, and links */
+    background-color: #fbf4f6;
     color: black;
-    font-family: Hyperbeast;
+    font-family: Hyperbeast, sans-serif; /* Added fallback font */
     box-shadow: 0 8px 9px rgba(10, 10, 10, 0.1);
+    padding: 10px 20px; /* Added some padding for better spacing */
 }
 
-
-
+.holder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 .logo {
     height: 100px;
     width: 100px;
-    
-    padding: 20px;
     border-radius: 30px;
-    align-self: flex-start;
-}
-
-.links{
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    margin: 10px;
-    align-self: center;
-    justify-content: space-between;
     
 }
 
-.nav_buttons{
-    background-color:#fbf4f6;
-    height:60px;
-    padding:10px;
-    margin: 10px;;
+.name {
+    font-size: 50px;
+    font-weight: 1000;
+    color:  #a33d32;
+    margin: 0; /* Ensures no extra spacing interferes */
+    display: flex;
+    align-items: flex-end; /* Ensures text aligns vertically */
+}
+
+.links {
+    display: flex; /* Ensures links are aligned horizontally */
+    /*gap: 15px;  Adds space between the links */
+    align-items: center; /* Vertically centers the links in the navbar */
+}
+
+.nav_buttons {
+    background-color: #fbf4f6;
+    color: #a33d32;
+    font-weight: 1000;
+    padding: 10px 20px;
     border-radius: 10px;
-    font-weight: bolder;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.nav_buttons:hover {
+    cursor: pointer;
+    background-color: #ffc1c1;
+}
+header{
+    height: 2000px;
+    background-image: url("./assets/main4.jpg") ;
+    background-size: cover;
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+}
+.title{
+    font-size: 100px;
+    font-weight: 1000;
+    color:  #a33d32;
+    margin-top: 0px; /* Ensures no extra spacing interferes */
+    padding-top:60px;
+    padding-left: 100px;
+    display: flex;
+    justify-self: flex-start;
+    
+    /**
+        text-shadow: 0px 8px 5px #a33d32;
+    */
+}
+
+.subtitle{
+    font-size: 50px;
+    font-weight: 1000;
+    color:  #a33d32;
+    border-top: 1px #a33d32 solid;
+    border-bottom: 1px #a33d32 solid;
+    margin: 0; /* Ensures no extra spacing interferes */
+    display: flex;
+    justify-self: center;
+
 }
